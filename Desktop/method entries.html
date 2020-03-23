@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const testUser = {
+  firstName: 'Alex',
+  lastName: 'Ivanov',
+  age: 36,
+  sex: 'male',
+  hight: 180,
+  weight: 90
+};
+
+const getEntries = function(obj){
+    let arr = [];
+    for(let key in obj){
+        arr.push([key,obj[key]]);
+        //console.log(arr); 
+    }
+     
+    return console.log(arr);
+    
+}
+getEntries(testUser);
+
+
+
+//console.log(Object.entries(testUser));
+
+    </script>
+</body>
+</html>
